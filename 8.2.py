@@ -1,14 +1,11 @@
 import turtle
 import random
 
-# Danh sách màu sắc
 colors = ["red", "green", "blue", "orange", "purple", "pink", "yellow"]
 
-# Tạo một turtle painter
 painter = turtle.Turtle()
 painter.pensize(3)
 
-# Vẽ 10 hình tròn với màu ngẫu nhiên
 for i in range(10):
     color = random.choice(colors)
     painter.pencolor(color)
@@ -17,5 +14,4 @@ for i in range(10):
     painter.left(60)
     painter.setposition(0, 0)
 
-# Giữ cửa sổ mở cho đến khi người dùng đóng
 turtle.done()
